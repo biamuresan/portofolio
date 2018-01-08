@@ -1,0 +1,265 @@
+body{
+    font-family: times, sans-serif;
+}
+header{
+    border-bottom-width: 2px;
+    border-top-width: 0px;
+    border-right-width:0px;
+    border-left-width:0px;
+    border-style: double;
+    border-color: black;
+    color: white;
+    text-align: center;
+    font-family: times, sans-serif;
+    font-size: 23px;
+    display: flex-end;
+
+}
+
+
+
+nav ul {
+
+         width: auto;
+
+         }
+nav li{
+    display: inline-block;
+
+}
+nav a {
+         text-decoration: none;
+         color:black;
+         width: 100%;
+         display:block;
+         padding: 5px 1px;
+      }
+nav a:hover{
+        color: whitesmoke;
+        transition: all 1s;
+
+           }
+#background{
+    width: 400px;
+    position:absolute;
+
+}
+
+#mepic{
+    width:300px;
+    padding: 20px 20px 20px 20px;
+}
+
+.about {
+    padding: 100px 30px 100px 30px;
+    font-family: times, sans-serif;
+   font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    font-family: times,sans-serif;
+    font-size: 15px;
+
+}
+
+.pic{
+    padding: 20px 20px 20px 20px;
+    align-content: center;
+    width: 300px;
+}
+
+#code{
+    font-family: times, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    padding-right: 20px;
+}
+
+
+h1{
+    text-align: center;
+    font-family: times,sans-serif;
+    font-size: 15px;
+    padding-top: 30px;
+}
+
+
+
+
+
+
+
+
+
+@media all and (min-width: 40em){
+    .body1{
+    background-image:url(http://bmuresan.com/portofolio/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+    #background{
+        display: none;
+    }
+    #mainabout{
+                    display: grid;
+                    grid-gap: 3px;
+                    grid-template-columns: repeat(3, 1fr);
+                    grid-template-areas:
+                        "fp mepic sp";}
+    #fp{
+        grid-area: fp;
+        text-align: center;
+
+    }
+    #mepic{
+        grid-area: mepic;
+        align-self: center;
+        width:350px;
+
+
+
+
+    }
+    #sp{
+        grid-area: sp;
+        text-align: center;
+
+    }
+    #nav a{
+        padding: 5px 17px;
+    }
+
+    footer{
+        padding-top: 170px;
+    }
+    #workmain{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "bw ba"
+            "bu bv";
+    }
+    #basicweb{
+        grid-area: bw;
+        align-content: center;
+        padding-left: 300px
+    }
+    #basicanimation{
+        grid-area: ba;
+        align-content: center;
+        padding-left: 100px;
+    }
+    #basicux{
+        grid-area: bu;
+        align-content: center;
+        padding-left: 300px;
+    }
+    #basicvideo{
+        grid-area: bv;
+        align-content: center;
+        padding-left: 100px;
+    }
+    .pic{
+        width: 350px;
+    }
+     #bwmain{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+           "rp rd pr"
+            "rp p pr";
+    }
+    #resposivewebsite{
+        grid-area: rp;
+    }
+    #redesignedwebsite{
+        grid-area: rd;
+    }
+    #code{
+        grid-area: p;
+        text-align: center;
+        padding: 20px;
+    }
+    #presentation{
+        grid-area: pr;
+    }
+     #bamain{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+           "sa st pp1"
+            "pp2 ip dp";}
+    #sa{
+        grid-area: sa;
+        padding: 20px;
+    }
+    #st{
+         grid-area: st;
+        padding: 20px;
+    }
+    #pp1{
+        grid-area: pp1;
+        padding: 20px;
+    }
+    #pp2{
+        grid-area: pp2;
+        padding: 20px;
+    }
+    #ip{
+        grid-area: ip;
+        padding: 20px;
+    }
+    #pd{
+        grid-area: pd;
+        padding: 20px;
+    }
+      #bumain{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+           "wp rp"
+            "dd pt";}
+    #wp{
+        grid-area: wp;
+         align-content: center;
+        padding-left: 300px
+    }
+    #rp{
+        grid-area: rp;
+        align-content: center;
+        padding-left: 100px;
+    }
+    #dd{
+        grid-area: dd;
+         align-content: center;
+        padding-left: 300px
+    }
+    #pt{
+        grid-area: pt;
+        align-content: center;
+        padding-left: 100px;
+    }
+     #bvmain{
+        display: grid;
+        grid-gap: 3px;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+            "vd sb cw";}
+    #vd{
+        grid-area: vd;
+    }
+    #sb{
+        grid-area: sb;
+    }
+    #cw{
+        grid-area: cw;
+    }
+    #navpic{
+        width: 220px;}
+    }
+}
